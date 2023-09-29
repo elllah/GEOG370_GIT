@@ -29,7 +29,7 @@
       var map = L.map('map', { attributionControl: false } ).setView([35.89643362513054, -78.86382363568839], 14.0);
       L.control.attribution( { prefix: false } ).addTo( map );
       
-      var tilesource_layer = L.tileLayer('./hw5v2_tiles/{z}/{x}/{y}.png', {
+      var tilesource_layer = L.tileLayer('./hw5v2_files/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
