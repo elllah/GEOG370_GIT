@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "export_point_real",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "name": "BOSTON LOGAN AIRPORT" }, "geometry": { "type": "Point", "coordinates": [ -71.019954879506557, 42.366529371132927 ] } }
+]
+}
