@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20051121</pubdate>
+                <title>Florida National Hydrography Dataset (NHD) - Waterbodies (100k)</title>
+                <geoform>vector digital data</geoform>
+                <onlink>https://publicfiles.dep.state.fl.us/OTIS/GIS/data/FLORIDA_NHD.zip</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. This high-resolution NHD, generally developed at 1:24,000/1:12,000 scale, adds detail to the original 1:100,000-scale NHD. (Data for Alaska, Puerto Rico and the Virgin Islands was developed at high-resolution, not 1:100,000 scale.) Local resolution NHD is being developed where partners and data exist. The NHD contains reach codes for networked features, flow direction, names, and centerline representations for areal water bodies. Reaches are also defined on waterbodies and the approximate shorelines of the Great Lakes, the Atlantic and Pacific Oceans and the Gulf of Mexico. The NHD also incorporates the National Spatial Data Infrastructure framework criteria established by the Federal Geographic Data Committee.</abstract>
+            <purpose>The NHD is a national framework for assigning reach addresses to water-related entities, such as industrial discharges, drinking water supplies, fish habitat areas, wild and scenic rivers. Reach addresses establish the locations of these entities relative to one another within the NHD surface water drainage network, much like addresses on streets. Once linked to the NHD by their reach addresses, the upstream/downstream relationships of these water-related entities--and any associated information about them--can be analyzed using software tools ranging from spreadsheets to geographic information systems (GIS). GIS can also be used to combine NHD-based network analysis with other data layers, such as soils, land use and population, to help understand and display their respective effects upon one another. Furthermore, because the NHD provides a nationally consistent framework for addressing and analysis, water-related information linked to reach addresses by one organization (national, state, local) can be shared with other organizations and easily integrated into many different types of applications to the benefit of all.</purpose>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <rngdates>
+                    <begdate>19990623</begdate>
+                    <enddate>20230330</enddate>
+                </rngdates>
+            </timeinfo>
+            <current>Ending Date refers to last known date features were updated in the NHD database. See dataset specific metadata.</current>
+        </timeperd>
+        <status>
+            <progress>In work</progress>
+            <update>Biannually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-88.037475</westbc>
+                <eastbc>-79.835456</eastbc>
+                <northbc>32.132676</northbc>
+                <southbc>24.480883</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Artificial Path</themekey>
+                <themekey>Reservoir</themekey>
+                <themekey>Reach Code</themekey>
+                <themekey>Hydrography</themekey>
+                <themekey>Spring / Seep</themekey>
+                <themekey>Swamp / Marsh</themekey>
+                <themekey>Stream / River</themekey>
+                <themekey>FWHydrography</themekey>
+                <themekey>Canal / Ditch</themekey>
+                <themekey>Lake / Pond</themekey>
+            </theme>
+        </keywords>
+        <accconst>Other Constraints</accconst>
+        <useconst>None. Acknowledgment of the originating agencies would be appreciated in products derived from these data.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                    <cntper>Param Maharaj</cntper>
+                </cntorgp>
+                <cntpos>Florida NHD Steward</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2600 Blair Stone Rd</address>
+                    <city>Tallahassee</city>
+                    <state>FL</state>
+                    <postal>32399-2400</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>850-245-8551</cntvoice>
+                <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+            </cntinfo>
+        </ptcontac>
+        <datacred>See dataset specific metadata.</datacred>
+        <native>Version 6.2 (Build 9200) ; Esri ArcGIS 10.6.1.9270</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Statements of attribute accuracy are based on accuracy statements made for U.S. Geological Survey Digital Line Graph (DLG) data, which is estimated to be 98.5 percent. One or more of the following methods were used to test attribute accuracy: manual comparison of the source with hardcopy plots; symbolized display of the DLG on an interactive computer graphic system; selected attributes that could not be visually verified on plots or on screen were interactively queried and verified on screen. In addition, software validated feature types and characteristics against a master set of types and characteristics, checked that combinations of types and characteristics were valid, and that types and characteristics were valid for the delineation of the feature. Feature types, characteristics, and other attributes conform to the Standards for National Hydrography Dataset (USGS, 1999) as of the date they were loaded into the database. All names were validated against a current extract from the Geographic Names Information System (GNIS). The entry and identifier for the names match those in the GNIS. The association of each name to reaches has been interactively checked, however, operator error could in some cases apply a name to a wrong reach. This statement is generally true for the most common sources of NHD data. Other sources and methods may have been used to create or update NHD data. In some cases, additional information may be found in the NHDMetadata table.</attraccr>
+        </attracc>
+        <logic>Points, nodes, lines, and areas conform to topological rules. Lines intersect only at nodes, and all nodes anchor the ends of lines. Lines do not overshoot or undershoot other lines where they are supposed to meet. There are no duplicate lines. Lines bound areas and lines identify the areas to the left and right of the lines. Gaps and overlaps among areas do not exist. All areas close.</logic>
+        <complete>The completeness of the data reflects the content of the sources, which most often are the published USGS topographic quadrangle and/or the USDA Forest Service Primary Base Series (PBS) map. The USGS topographic quadrangle is usually supplemented by Digital Orthophoto Quadrangles (DOQs). Features found on the ground may have been eliminated or generalized on the source map because of scale and legibility constraints. In general, streams longer than one mile (approximately 1.6 kilometers) were collected. Most streams that flow from a lake were collected regardless of their length. Only definite channels were collected so not all swamp/marsh features have stream/rivers delineated through them. Lake/ponds having an area greater than 6 acres were collected. Note, however, that these general rules were applied unevenly among maps during compilation. Reaches codes are defined on all features of type stream/river, canal/ditch, artificial path, coastline, and connector. Waterbody reach codes are defined on all lake/pond and most reservoir features. Names were applied from the GNIS database. Detailed capture conditions are provided for every feature type in the Standards for National Hydrography Dataset available online through http://mapping.usgs.gov/standards/. This statement is generally true for the most common sources of NHD data. Other sources and methods may have been used to create or update NHD data. In some cases, additional information may be found in the NHDMetadata table.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Statements of horizontal positional accuracy are based on accuracy statements made for U.S. Geological Survey topographic quadrangle maps. These maps were compiled to meet National Map Accuracy Standards. For horizontal accuracy, this standard is met if at least 90 percent of points tested are within 0.02 inch (at map scale) of the true position. Additional offsets to positions may have been introduced where feature density is high to improve the legibility of map symbols. In addition, the digitizing of maps is estimated to contain a horizontal positional error of less than or equal to 0.003 inch standard error (at map scale) in the two component directions relative to the source maps. Visual comparison between the map graphic (including digital scans of the graphic) and plots or digital displays of points, lines, and areas, is used as control to assess the positional accuracy of digital data. Digital map elements along the adjoining edges of data sets are aligned if they are within a 0.02 inch tolerance (at map scale). Features with like dimensionality (for example, features that all are delineated with lines), with or without like characteristics, that are within the tolerance are aligned by moving the features equally to a common point. Features outside the tolerance are not moved; instead, a feature of type connector is added to join the features. This statement is generally true for the most common sources of NHD data. Other sources and methods may have been used to create or update NHD data. In some cases, additional information may be found in the NHDMetadata table.</horizpar>
+            </horizpa>
+        </posacc>
+        <posacc>
+            <vertacc>
+                <vertaccr>Statements of vertical positional accuracy for elevation of water surfaces are based on accuracy statements made for U.S. Geological Survey topographic quadrangle maps. These maps were compiled to meet National Map Accuracy Standards. For vertical accuracy, this standard is met if at least 90 percent of well-defined points tested are within one-half contour interval of the correct value. Elevations of water surface printed on the published map meet this standard; the contour intervals of the maps vary. These elevations were transcribed into the digital data; the accuracy of this transcription was checked by visual comparison between the data and the map. This statement is generally true for the most common sources of NHD data. Other sources and methods may have been used to create or update NHD data. In some cases, additional information may be found in the NHDMetadata table.</vertaccr>
+            </vertacc>
+        </posacc>
+        <lineage>
+            <procstep>
+                <procdesc>In June 2013, the existing Florida NHD100K and NHD 24K as downloaded April 10, 2013 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable changes to the 24K NHD database since the previous download in December 2012 are as follows: Full photo revision to Lake Okeechobee (03090201), Hillsborough (03100205) and Alafia (03100204) sub basins; Full photo revision to portions of Peace (03100101), Withlacoochee (03100208), Choctawatchee Bay (03140102), miscellaneous updates in Big Cypress Swamp (03090204) and Everglades (03090202); miscellaneous edits/additions of stream gages, dams and other point event features by USGS. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.</procdesc>
+                <procdate>20130601</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in ArcSDE/DataMiner and MapDirect. Metadata updated.</procdesc>
+                <procdate>20130824</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>In November 2013, the existing Florida NHD100K and NHD 24K as downloaded November 12, 2013 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download in April 2012 were in the following subbasins: Withlacoochee (03100208), Peace (03100101), Upper St. Johns (03080101), Kissimmee (03090101), Florida Southeast Coast (03090206), Choctawhatchee Bay (03140102), Lower Choctawhatchee (03140203) and assorted network improvements made by USGS staff.</procdesc>
+                <procdate>20131101</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in ArcSDE/DataMiner and MapDirect. Metadata updated.</procdesc>
+                <procdate>20131208</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>In May 2014, the existing Florida NHD100K and NHD 24K as downloaded May 12, 2014 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable changes to the 24K NHD database since the previous download in November 2013 are as follows: Aerial imagery revision to priority WBIDs ( Waterbody IDs provided by DEP Water Assessment Section), other WBIDs and network improvements by USGS to Tampa Bay (03100206), Crystal-Pithlachascotee (03100207), Withlacoochee (03110203), Charlotte Harbor (03100103), St. Andrew-St. Joseph Bays (03140101), Vero Beach (03080203), Everglades (03090202), Blackwater (03140104), Manatee (03100202), Econfina-Steinhatchee (03110102), Caloosahatchee (03090205), Perdido (03140106), Florida Southeast Coast (03090206), Lake Okeechobee (03090201), Cumberland-St. Simons (03070203), Santa Fe (03110206), Alapaha (03110202), Aucilla (03110103), Lower Ochlockonee (03120003), Cape Canaveral (03080202), Nassau (03070205), Upper Suwannee (03110201), Myakka (03100102), Chipola (03130012), Pensacola Bay (03140105), Upper St. Johns (03080101), Lower St. Johns (03080103), Oklawaha (03080102), Little Manatee (03100203), Waccasassa (03110101), Apalachee Bay-St. Marks (03120001), Western Okeechobee Inflow (03090103), Northern Okeechobee Inflow (03090102), St. Marys (03070204), Daytona-St. Augustine (03080201), Kissimmee (03090101), Lower Suwannee (03110205), Big Cypress Swamp (03090204), Peace (03100101), Yellow (03140103), . The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.</procdesc>
+                <procdate>20140512</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>The processes used to create and maintain high-resolution NHD data can be found in the table called "NHDMetadata". Because NHD data can be downloaded using several user-defined areas, the process descriptions can vary for each download. The NHDMetadata table contains a list of all the process descriptions that apply to a particular download. These process descriptions are linked using the DuuID to the NHDFeatureToMetadata table which contains the com_ids of all the features within the download. In addition, another table, the NHDSourceCitation, can also be linked through the DuuID to determine the sources used to create or update NHD data.</procdesc>
+                <procdate>20140512</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>In October 2014, the existing Florida NHD100K and NHD 24K as downloaded October 22, 2014 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable changes to the 24K NHD database since the previous download in May 2014 are as follows: Geographic Information Names System (GNIS) specific updates, aerial imagery based updates to prioritized Florida DEP Waterbody IDs (WBIDs), and/or additional aerial imagery based updates to St. Marys (3070204), Nassau (3070205), Upper St. Johns (3080101), Lower St. Johns (3080103), Daytona-St. Augustine (3080201), Cape Canaveral (3080202), Vero Beach (3080203), Kissimmee (3090101), Big Cypress Swamp (3090204), Caloosahatchee (3090205), Florida Southeast Coast (3090206), Crystal-Pithlachascotee (3100207), Econfina-Steinhatchee (3110102), Aucilla (3110103), Apalachee Bay-St. Marks (3120001), Lower Ochlockonee (3120003), Apalachicola (3130011), New (3130013), Apalachicola Bay (3130014), St. Andrew-St. Josephs Bays (3140101), Choctawhatchee Bay (3140102), Yellow (3140103), Blackwater (3140104), Pensacola Bay (3140105), Perdido (3140106), Perdido Bay (3140107), Lower Choctawhatchee (3140203) and Escambia (3140305) sub basins.</procdesc>
+                <procdate>20141022</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>An October 22, 2014 copy of the Florida NHD was obtained from the USGS for purposes of updating the Florida Dept. of Environmental Protection Agencies SDE data. For this release, a new field called “Parent_Feature”was added to the NHDFlowline featureclass. Using Field Calculator, the “Parent_Feature” attribute for flowline features with FType not equal to Artificial Path were updated to the FType. For artificial path flowlines, a series of analyses using the relationship between the WBArea_Permanent_identifier field and the Permanent_identifier fields of each of the NHDArea and NHDWaterbody featureclasses facilitated the update of the Parent_Feature attribute. Several “select by location” analyses further provided updated to the “Parent_Feature.” Several hundred artificial paths remained after exhausting multiple analysis options and were ultimately individually inspected to see the relationship between the artificial path and the feature for which it was within.</procdesc>
+                <procdate>20141201</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Changes in the October 2014 download of the Florida NHD include new and updated NHD Point Events. These EventTypes follow the same format as the FCodes in the other featureclasses. Added detail has been incorporated for stream gages. Stream gages are now listed as being active (with continuous or partial data) or inactive. Dams are still included, but like the others, the code has changed. Past layer files referencing the NHDPointEvents featureclass will need updated symbology to link to the new codes. The layer file used on the FDEP DataMiner application has been updated to reflect the updates. New codes are as follows: 57001 - Stream Gage, Active, Continuous data; 57002 - Stream Gage, Active, Partial data; 57003 - Stream Gage, Inactive; 57100 - Dam.</procdesc>
+                <procdate>20141208</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in the GIS library</procdesc>
+                <procdate>20150107</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In May 2015, the Florida NHD 100K (as of March 25, 2015) and NHD 24K (as of March 17, 2015) including Watershed Boundary Dataset Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable changes to the 24K NHD database since the previous download in October 2014 are as follows: Geographic Information Names System (GNIS) specific updates in St. Marys (03070204), Nassau (03070205), Lower St. Johns (03080103), Caloosahatchee (03090205), Myakka (03100102), Sarasota Bay (03100201), Manatee (03100202), Little Manatee (03100203), Hillsborough (03100205), Withlacoochee (03100208), Waccasassa (03110101), Upper Suwannee (03110201), Alapaha (03110202), Withlacoochee (03110203), Lower Suwannee (03110205), Santa Fe (03110206), Lower Chattahoochee (03130004), Chipola (03130012), St. Andrew-St. Joseph Bays (03140101) &amp; Pea (03140202) subbasins; Aerial Imagery Revision in Upper St. Johns (03080101), Western Okeechobee Inflow (03090103), Lake Okeechobee (03090201), Everglades (03090202), Florida Bay-Florida Keys (03090203), Big Cypress Swamp (03090204), Florida Southeast Coast (03090206), Alafia (03100204), Aucilla (03110103), Lower Suwannee (03110205), Blackwater (03140104), Pensacola Bay (03140105) &amp; Perdido (03140106) subbasins. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace connected features through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to and be limited to the maximum scale set the NHD24K and NHDFlowline scale dependency settings. If this happens, to see the full set of selected features, change both the layer and group settings to “Show layer at all scales”, unclick the NHD 100K and Major NHD 100K group layers, and then zoom to the selected features again. Additionally, a new field in the 24K NHD Flowline featureclass has been added to support the analysis of Flowline features. The ‘Parent_Feature’ identifies the feature type of the flowline in all cases except for Artificial Paths. For Artificial paths, the feature type of the polygon feature it resides in has been used.</procdesc>
+                <procdate>20150410</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in the GIS library.</procdesc>
+                <procdate>20150501</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In December 2015, the Florida NHD 100K (as of March 25, 2015) and NHD 24K (as of October 22, 2015) including Watershed Boundary Dataset Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable changes to the 24K NHD database since the previous download in October 2014 are as follows: Edits performed by the Florida stewardship team in Alafia (03100204), Big Cypress Swamp (03090204), Blackwater (03140104), Crystal-Pithlachascotee (03100207), Econfina-Steinhatchee (03110102), Everglades (03090202), Florida Bay-Florida Keys (03090203), Lake Okeechobee (03090201), Lower Choctawhatchee (03140203), Lower Ochlockonee (03120003), Lower Suwannee (03110205), Pensacola Bay (03140105), St. Andrew-St. Joseph Bays (03140101), St. Marys (03070204), and Upper St. Johns (03080101) subbasins; Edits performed by USGS for attribute updates, connectivity checks and updating m-values in Alafia (03100204), Alapaha (03110202), Apalachee Bay-St. Marks (03120001), Apalachicola (03130011), Aucilla (03110103), Big Cypress Swamp (03090204), Blackwater (03140104), Caloosahatchee (03090205), Chipola (03130012), Choctawhatchee Bay (03140102), Daytona-St. Augustine (03080201), Escambia (03140305), Florida Southeast Coast (03090206), Kissimmee (03090101), Lake Okeechobee (03090201), Little Manatee (03100203), Lower Choctawhatchee (03140203), Lower Conecuh (03140304), Lower Ochlockonee (03120003), Lower St. Johns (03080103), Lower Suwannee (03110205), New (03130013), Oklawaha (03080102), Pensacola Bay (03140105), and Perdido (03140106) subbasins. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings. Additionally, a new field in the 24K NHD Flowline featureclass has been added to support the analysis of Flowline features. The “Parent_Feature” identifies the feature type of the flowline in all cases except for Artificial Paths. For Artificial paths, the feature type of the polygon feature it resides in has been used. See process step for additional information. It was realized that the US Board on Geographic Names doesn't recognize Atlantic Ocean along the western side of the state. The Florida stewardship team was in the process of removing these polygons but not all the edits made it into this original version of the NHD. After downloading the October 22, 2015 version of the NHD, the remaining Atlantic Ocean polygons in the Gulf were manually removed and currently match the federal database. The NHD editing process officially removed the polygons from the national database using the USGS tools in November.</procdesc>
+                <procdate>20151116</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR</cntorg>
+                            <cntper>Edwin Abbey</cntper>
+                        </cntorgp>
+                        <cntpos>Environmental Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8550</cntvoice>
+                        <cntemail>Edwin.Abbey@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in the GIS library.</procdesc>
+                <procdate>20151208</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Added NOAA- NFHAP Estuarine Zones layer in the NHD layer published in DataMiner.</procdesc>
+                <procdate>20160225</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In April 2016, the existing Florida NHD100K and NHD 24K as downloaded February 25, 2016 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: Apalachee Bay-St. Marks, Apalachicola Bay, Big Cypress Swamp, Charlotte Harbor, Choctawhatchee Bay, Escambia, Everglades, Kissimmee, Lower Choctawhatchee, Lower Suwannee, Myakka, St. Andrew-St. Joseph Bays, Upper St. Johns, and Western Okeechobee Inflow and assorted network improvements made by USGS staff. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.</procdesc>
+                <procdate>20160426</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR</cntorg>
+                            <cntper>Edwin Abbey</cntper>
+                        </cntorgp>
+                        <cntpos>Environmental Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8550</cntvoice>
+                        <cntemail>Edwin.Abbey@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Data updated in SDE and DataMiner. Metadata updated.</procdesc>
+                <procdate>20160506</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In October 2016, the existing Florida NHD100K and NHD 24K as downloaded September 5, 2016 from the USGS NHD, Hydrologic Units, GNIS alternate names and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: Big Cypress Swamp, Caloosahatchee, Cape Canaveral, Daytona-St. Augustine, Econfina-Steinhatchee, Everglades, Kissimmee, Lake Okeechobee, Lower Ochlockonee, New, St. Andrew-St. Joseph Bays, Upper St. Johns, Oklawaha, Vero Beach and includes assorted network improvements made by USGS staff. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.</procdesc>
+                <procdate>20161003</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR</cntorg>
+                            <cntper>Edwin Abbey</cntper>
+                        </cntorgp>
+                        <cntpos>Environmental Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8550</cntvoice>
+                        <cntemail>Edwin.Abbey@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20161209</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In January 2017, the existing Florida NHD100K and NHD 24K as downloaded January 17, 2017 from the USGS NHD, Hydrologic Units, GNIS alternate names (from December 1, 2016) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: Florida Southeast Coast (03090206), Apalachicola (03130011), St. Andrew-St. Joseph Bays (03140101) and assorted network improvements made by USGS staff in St. Andrew-St. Joseph Bays (03140101). The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20170124</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR</cntorg>
+                            <cntper>Edwin Abbey</cntper>
+                        </cntorgp>
+                        <cntpos>Environmental Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8550</cntvoice>
+                        <cntemail>Edwin.Abbey@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20170217</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In June 2017, the existing Florida NHD100K and NHD 24K as downloaded May 1, 2017 from the USGS NHD, Hydrologic Units, GNIS alternate names (from June 1, 2017) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: Florida Southeast Coast (03090206), Withlacoochee (0300208), Little Manatee (03100203), Everglades (03090202), and Econfina-Steinhatchee (03110102). In preperation for the NHDPlusHR, 39 basins received minor edits to fix USGS Severity 1 and 3 errors. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20170623</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20170728</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In December 2017, the existing Florida NHD100K and NHD 24K as downloaded November 27, 2017 from the USGS NHD, Hydrologic Units, GNIS alternate names (from October 1, 2017) and relationships were combined into one file geodatabase for public distribution and use.In preperation for the NHDPlusHR, 16 basins received minor edits to fix USGS Severity 1 and 3 errors. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20171130</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20171215</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In May 2018, the existing Florida NHD100K and NHD 24K as downloaded May 2, 2018 from the USGS NHD, Hydrologic Units, GNIS alternate names (from April 1, 2018) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03090204, 03080103, 03090202, and 03130011. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20180511</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20180531</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In November 2018, the existing Florida NHD100K and NHD 24K as downloaded November 7, 2018 from the USGS NHD, Hydrologic Units, GNIS alternate names (from October 1, 2018) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03140103, 03130011, 03080103 03090206 and 03090202. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings. Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20181116</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20181128</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In May 2019, the existing Florida NHD100K and NHD 24K as downloaded April 26, 2019 from the USGS NHD, Hydrologic Units, GNIS alternate names (from April 1, 2019) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03140103, 03140106, 03110206, 03090205, 03080103, and 03100206. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings. Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20190513</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20190520</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In November 2019, the existing Florida NHD100K and NHD 24K as downloaded October 28, 2019 from the USGS NHD, Hydrologic Units, GNIS alternate names (from September 1, 2019) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03100206, 03100201, 03080103, 03130011, and 03080201. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20191101</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20191121</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In April 2020, the existing Florida NHD100K and NHD 24K as downloaded April 28, 2020 from the USGS NHD, Hydrologic Units, GNIS alternate names (from March 1, 2020) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03110203, 03110206, 03080102, and 03130012. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20200504</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20200521</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In November 2020, the existing Florida NHD100K and NHD 24K as downloaded November 2, 2020 from the USGS NHD, Hydrologic Units, GNIS alternate names (from September 1, 2020) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03110203, 03110205, and 03130011. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20201112</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20201201</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In April 2021, the existing Florida NHD100K and NHD 24K as downloaded March 29, 2021 from the USGS NHD, Hydrologic Units, GNIS alternate names (from March 1, 2021) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03110203, 03110205, and 03130011. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20210409</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20210520</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In October 2021, the existing Florida NHD100K and NHD 24K as downloaded October 12, 2021 from the USGS NHD, Hydrologic Units, GNIS alternate names (from August 25, 2021) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03110102, 03100208, 03100101, 03070204, and 03140102. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20211027</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20211102</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In March 2022, the existing Florida NHD100K and NHD 24K as downloaded March 27, 2022 from the USGS NHD, Hydrologic Units, GNIS alternate names (from August 25, 2021) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03100101, 03100103, 03070205, 03100204, 03140107, and 03070204. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20220330</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20220428</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In October 2022, the existing Florida NHD100K and NHD 24K as downloaded October 25, 2022 from the USGS NHD, Hydrologic Units, GNIS alternate names (from August 25, 2021) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03110205, 03100203, 03100208, and 03070204. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20221103</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In March 2023, the existing Florida NHD100K and NHD 24K as downloaded March 27, 2023 from the USGS NHD, Hydrologic Units, GNIS alternate names (from August 25, 2021) and relationships were combined into one file geodatabase for public distribution and use. Notable edits in the 24K NHD database since the previous download were in the following subbasins: 03100208, 03100203, 03140102, 03110103, 03110205, 03110102, 03140105, 03140104, 03140104, 03140305, 03130013, 03110101, and 03120003. The database includes a network using the NHD24 NHDFlowline featureclass. The Utility Network Analyst tool can be used to trace routes through the network, however please note that if you set the results of the trace as selected features and zoom to selected, you may zoom to a scale that is outside the NHD24 dependency settings.Relationship classes have been created to identify additional names that features may be known by through the Variant Names table. Relationship classes have also been created to facilitate the identification of which waterbody or area a flowline traverses through based on the WBAreaPermanent_ID field.</procdesc>
+                <procdate>20230330</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>FDEP, DEAR, Watershed Services Program</cntorg>
+                            <cntper>Param Maharaj</cntper>
+                        </cntorgp>
+                        <cntpos>Florida NHD Steward</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>850-245-8551</cntvoice>
+                        <cntemail>Param.Maharaj@floridadep.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Revised data obtained from DEAR as part of the biannual NHD update and updated the same in the GIS library. Metadata updated.</procdesc>
+                <procdate>20230412</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing and physical</addrtype>
+                            <address>2600 Blair Stone Rd MS 6520</address>
+                            <city>Tallahassee</city>
+                            <state>FL</state>
+                            <postal>32399-2400</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>35196</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>NHD.NHD100Waterbody</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Coordinates defining the features.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>FDate</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Resolution</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GNIS_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GNIS_Name</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>AreaSqKm</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Elevation</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Permanent_Identifier</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ReachCode</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>FType</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>FCode</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>THINNERCODE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.AREA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+            </attr>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>NHDWaterbodyToMeta</enttypl>
+            </enttyp>
+        </detailed>
+        <overview>
+            <eaover>The National Hydrography Dataset is a comprehensive set of digital spatial data that encodes information about naturally occurring and constructed bodies of water, paths through which water flows, and related entities.  The information encoded about features includes a feature date, classification by type, other characteristics, a unique common identifier, the feature length or area, and (rarely) elevation of the surface of water pools and a description of the stage of the elevation.  For reaches, encoded information includes a reach code.  Names and their identifiers in the Geographic Names Information System, are assigned to most feature types.  The direction of flow is encoded for networked features.  The data also contains relations that encode metadata, and information that supports the exchange of future updates and improvements to the data.  The names and  definitions of all feature types, characteristics, and values are in the Standards for National Hydrography Dataset:  Reston, Virginia, U.S. Geological Survey, 1999.  The document is available online through http://mapping.usgs.gov/standards/.</eaover>
+            <eadetcit>The names and definitions of all feature types, characteristics, and values are in U.S. Geological Survey, 1999, Standards for National Hydrography Dataset High Resolution:  Reston, Virginia, U.S. Geological Survey.  The document is available online through http://mapping.usgs.gov/standards/.  Information about tables and fields in the data are available from the user documentation for the National Hydrography Dataset at http://nhd.usgs.gov.  The National Map - Hydrography Fact Sheet is also available at: http://erg.usgs.gov/isb/pubs/factsheets/fs06002.html.</eadetcit>
+        </overview>
+    </eainfo>
+    <metainfo>
+        <metd>20230330</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Florida Department of Environmental Protection (FDEP) OTIS/GIS Section</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2600 Blair Stone Rd MS 6520</address>
+                    <city>Tallahassee</city>
+                    <state>FL</state>
+                    <postal>32399-2400</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntemail>GIS.Librarian@dep.state.fl.us</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

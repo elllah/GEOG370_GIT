@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <pubdate>20190807</pubdate>
+                <title>Florida Algal Bloom Site Visits</title>
+                <onlink>https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/VIEW_FL_Algal_Bloom_Site_Visits_1/FeatureServer/0</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>FDEP reviews citizen reports of algal blooms received via the online reporting form or hotline and coordinates with other agencies who are also sampling – SFWMD, SWFWMD, FWC and Lee County – to determine the sampling team to respond based on the location of the bloom relative to the sampling schedule for that day. Additional entities have reached out to offer sampling support and are added to the schedule as needed. The department, water management districts and FWC routinely survey and sample locations in South Florida and are prepared to collect samples if algae is present. 
+The state’s bloom response team encourages everyone to be on the lookout for blooms and report them. Residents statewide can now easily report algal blooms to the department 24 hours a day, 7 days a week. Information can be reported online through www.reportalgalbloom.com, as well as through a new toll-free number at 1-855-305-3903. To report fish that are either dead or in poor physical condition, residents should contact the Fish Kill Hotline 1-800-636-0511. People experiencing symptoms or illnesses should contact the Florida Poison Control Center at 1-800-222-1222.Contact: GIS.Librarian@FloridaDEP.gov</abstract>
+            <purpose>To provide the locations of all monitoring site visits for the blue-green algal blooms.</purpose>
+        </descript>
+        <status>
+            <update>Daily</update>
+        </status>
+        <keywords>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>environment</themekey>
+            </theme>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>algae</themekey>
+                <themekey>Environmental Monitoring and Modeling</themekey>
+                <themekey>DEAR</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>DISCLAIMER (for maps)The boundaries depicted on this map document are approximate.  This map document is intended for use only at the published scale. These data are intended for informational use only and should not be considered authoritative for navigation, engineering, legal, or other site-specific purpose. FDEP does not assume any legal liability or responsibility arising from the use of this product in a manner not intended by the author.DISCLAIMER (for Web Applications)This graphical representation is provided for informational purposes and should not be considered authoritative for navigational, engineering, legal, and other uses.DISCLAIMER AND LIMITATION OF LIABILITY   (for data/metadata)WARRANTYThese data are provided without warranty of any kind, either expressed or implied.  The burden for determining fitness of use lies entirely with the user. The user is solely responsible for understanding the limitations of the data provided.LIABILITYThese data are intended for informational purposes and should not be considered authoritative for navigational, engineering, legal and other site-specific uses.  In no event shall FDEP be liable for damages of any kind including loss of anticipated profits or benefits arising out of use of or reliance on these data. </useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>FDEP, DEAR</cntorg>
+                    <cntper>Janis Morrow</cntper>
+                </cntorgp>
+                <cntpos>GIS Manager</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>2600 Blair Stone Rd</address>
+                    <city>Tallahassee</city>
+                    <state>FL</state>
+                    <postal>32399-2400</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>850-245-8543</cntvoice>
+                <cntemail>janis.morrow@floridadep.gov</cntemail>
+            </cntinfo>
+        </ptcontac>
+        <datacred>FDEP, DEAR</datacred>
+    </idinfo>
+    <metainfo>
+        <metd>20190807</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
